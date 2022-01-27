@@ -21,10 +21,9 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-}
-
-.ul-contact .item:not(:last-child) {
-  margin-bottom: 9px;
+  & .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address {
