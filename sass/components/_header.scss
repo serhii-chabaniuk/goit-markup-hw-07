@@ -1,14 +1,15 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo {
-  margin-right: 93px;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 93px;
+  }
+  &__logo--accent-color {
+    color: var(--title-text-color);
+  }
 }
 
 .logo {
@@ -19,10 +20,6 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.header__logo--accent-color {
-  color: var(--title-text-color);
 }
 
 .nav-link {
@@ -36,27 +33,24 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
-.nav-link.current {
-  color: var(--accent-color);
-  position: relative;
-}
-
-.nav-link.current::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-  position: absolute;
-  bottom: -1px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+    position: relative;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -1px;
+  }
 }
 
 .nav__list {
@@ -97,18 +91,16 @@
   &:focus > .contact__icon-smartphone {
     fill: var(--accent-color);
   }
-}
-
-.contact__icon-envelope {
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__icon-smartphone {
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon-envelope {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon-smartphone {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
