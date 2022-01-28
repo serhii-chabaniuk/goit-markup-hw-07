@@ -80,7 +80,7 @@ body {
   position: relative;
 }
 
-.nav-link::after {
+.nav-link.current::after {
   content: '';
   display: block;
   width: 100%;
