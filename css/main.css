@@ -273,11 +273,11 @@ body {
   margin-bottom: 0;
 }
 
-.section-doing {
+.doing {
   padding-bottom: 94px;
 }
 
-.title-doing {
+.doing__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: bold;
@@ -288,7 +288,7 @@ body {
   color: var(--title-text-color);
 }
 
-.ul-doing {
+.doing__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -297,15 +297,15 @@ body {
   list-style-type: none;
 }
 
-.ul-doing .item:not(:nth-child(3n)) {
+.doing__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.ul-doing .item {
+.doing__item {
   position: relative;
 }
 
-.h3-doind {
+.doing__text {
   width: 100%;
   margin: 0;
   padding: 27px 0px;
