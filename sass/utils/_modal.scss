@@ -26,6 +26,15 @@
   }
 }
 
+.modal-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
 .icon-close {
   fill: #000;
   position: absolute;
@@ -44,15 +53,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-.modal-label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
 }
 
 .modal-label.text {
